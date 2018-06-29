@@ -7,7 +7,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class main extends JFrame{
-    String prefix = "[テスト]";
+    String prefix ="[テスト]";
     public static void main(String args[]) {
 
         main frame = new main("タイトル");
@@ -25,11 +25,10 @@ public class main extends JFrame{
 
         JPanel p = new JPanel();
 
-        JLabel lab1 = new JLabel(prefix + "下記の物はプレフィックスです。");
-        JLabel lab2 = new JLabel();
+        JTextField text1 = new JTextField("aAあ123456");
+        text1.setFont(new Font("AR悠々ゴシック体E", Font.PLAIN, 30));
 
-        p.add(lab1);
-        p.add(lab2);
+        p.add(text1);
 
         Container contentPane =getContentPane();
         contentPane.add(p, BorderLayout.CENTER);
